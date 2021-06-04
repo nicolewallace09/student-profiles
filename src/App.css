@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.page {
+  background-color: #f0eff0;
+  width: 100vw;
+  height: 100vh;
+  padding: 1px;
+}
+
+.app {
+  margin: 100px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  border: solid #e0e0e0 1px;
+}
+
+.app-container {
+  margin: 0 auto;
+  max-width: 800px;
+  max-height: 650px;
+  overflow-x: scroll;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+img {
+  border-radius: 50%;
+  border: solid #e0e0e0 1px;
+  width: 9rem;
+  height: 9rem;
+  margin: 30px;
+}
+
+/* Student info */
+
+.name {
+  text-transform: uppercase;
+  font-weight: 700; 
+  font-size: 2.3rem;
+}
+
+.info-details {
+  line-height: 8px;
+  margin: 10px 20px;
+}
+
+.toggle-grades {
+  margin: 2px 0;
+}
+
+.grades {
+  line-height: 6px;
+}
+
+.student-cards.card  {
+  border: none;
+  border-bottom: solid  #e0e0e0 1px; 
+  border-radius: 0;
+}
+
+.card-body {
+  margin: -10px -15px;
+}
+
+input.form-control {
+  border: 0;
+  border-bottom: solid 2px #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 80%;
+}
+
+
+
+
+
