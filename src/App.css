@@ -48,10 +48,6 @@ img {
   margin: 10px 20px;
 }
 
-.toggle-grades {
-  margin: 2px 0;
-}
-
 .grades {
   line-height: 6px;
 }
@@ -63,7 +59,7 @@ img {
 }
 
 .card-body {
-  margin: -10px -15px;
+  margin: 10px -15px;
 }
 
 input.form-control {
@@ -74,6 +70,13 @@ input.form-control {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-width: 80%;
+  font-size: 18px;
+}
+
+/* tags */
+input.tags-input {
+  border: 0; 
+  border-bottom: solid 1px #b2b2b2;
 }
 
 
