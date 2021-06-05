@@ -66,7 +66,23 @@ function Student(props) {
                         <p className="company">Company: {props.company}</p>
                         <p className="skill">Skill: {props.skill}</p>
                         <p className="average">Average: {getAverage(props.grades)}%</p>
-
+                        
+                        <Collapse
+                            isOpen={open}
+                            onEntered={onEntered}
+                            onExited={onExited}
+                        >
+                            <div className="card-body">
+                                <p className="grades">Test 1: {props.grades[0]}%</p>
+                                <p className="grades">Test 2: {props.grades[1]}%</p>
+                                <p className="grades">Test 3: {props.grades[2]}%</p>
+                                <p className="grades">Test 4: {props.grades[3]}%</p>
+                                <p className="grades">Test 5: {props.grades[4]}%</p>
+                                <p className="grades">Test 6: {props.grades[5]}%</p>
+                                <p className="grades">Test 7: {props.grades[6]}%</p>
+                                <p className="grades">Test 8: {props.grades[7]}%</p>
+                            </div>
+                        </Collapse>
 
                         <div className="tags-section">
                             <ul id="tags">
@@ -89,24 +105,6 @@ function Student(props) {
                             placeholder="Add tag"
                             />
                         </div>
-
-
-                        <Collapse
-                            isOpen={open}
-                            onEntered={onEntered}
-                            onExited={onExited}
-                        >
-                            <div className="card-body">
-                                <p className="grades">Test 1: {props.grades[0]}%</p>
-                                <p className="grades">Test 2: {props.grades[1]}%</p>
-                                <p className="grades">Test 3: {props.grades[2]}%</p>
-                                <p className="grades">Test 4: {props.grades[3]}%</p>
-                                <p className="grades">Test 5: {props.grades[4]}%</p>
-                                <p className="grades">Test 6: {props.grades[5]}%</p>
-                                <p className="grades">Test 7: {props.grades[6]}%</p>
-                                <p className="grades">Test 8: {props.grades[7]}%</p>
-                            </div>
-                        </Collapse>
                     </div> 
                 </div>
 

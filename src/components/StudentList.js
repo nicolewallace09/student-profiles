@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react'; 
 import Student from './Student'; 
 
-function StudentList(props) {
+function StudentList() {
+    // data from API
     const [data, setData] = useState([]); 
 
+    // search by name
     const [q, setQ] = useState(''); 
+
+    // search by tag
+    const [tags, setTags] = useState(''); 
   
     // displaying API data 
     const displayData = async() => {
@@ -24,7 +29,7 @@ function StudentList(props) {
     }, []); 
 
     function searchStudents (students) {
-        return students.filter(student => student.firstName.toLowerCase().indexOf(q) > -1 ||  student.lastName.toLowerCase().indexOf(q) > -1) ;
+        return students.filter(student => student.firstName.toLowerCase().indexOf(q) > -1 ||  student.lastName.toLowerCase().indexOf(q) > -1);
       }
 
  return (
@@ -39,18 +44,29 @@ function StudentList(props) {
             </input>
         </div>
 
+        {/* <div className="search-tag">
+            <input className="tag-form-control" 
+                type="search" 
+                placeholder="Search by tag" 
+                aria-label="Search"
+                value={tags}
+                onChange={(event) => setTags(event.target.value)}>
+            </input>
+        </div> */}
+
         <div className="app-container">
             <div className='student-list'>
-            {data && searchStudents(data).map((student => ( 
-                <Student 
-                    pic={student.pic}
-                    firstName={student.firstName}
-                    lastName={student.lastName}
-                    email={student.email}
-                    company={student.company}
-                    skill={student.skill}
-                    grades={student.grades}
-                    />
+                {data && searchStudents(data).map((student => ( 
+                    <Student 
+                        key={student.id}
+                        pic={student.pic}
+                        firstName={student.firstName}
+                        lastName={student.lastName}
+                        email={student.email}
+                        company={student.company}
+                        skill={student.skill}
+                        grades={student.grades}
+                        />
             )))}
             </div>
         </div>
