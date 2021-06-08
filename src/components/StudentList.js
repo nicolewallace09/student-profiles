@@ -9,7 +9,7 @@ function StudentList() {
     const [q, setQ] = useState(''); 
 
     // search by tag
-    const [tags, setTags] = useState(''); 
+    // const [tags, setTags] = useState(''); 
   
     // displaying API data 
     const displayData = async() => {
@@ -30,7 +30,11 @@ function StudentList() {
 
     function searchStudents (students) {
         return students.filter(student => student.firstName.toLowerCase().indexOf(q) > -1 ||  student.lastName.toLowerCase().indexOf(q) > -1);
-      }
+    }
+
+    // function searchTags (tags) {
+    //     return tags.filter(tag => tag.firstName.toLowerCase().indexOf(q) > -1 ||  student.lastName.toLowerCase().indexOf(q) > -1);
+    // }
 
  return (
     <>
