@@ -1,7 +1,7 @@
 # Student Profiles
 
 ## Description 
-This is an application that was designed for Hatchways Front End Assessment. This application uses an API to display data which can then be filtered by student names and each student's information is displayed. This application was built using React and React Hooks. 
+This application uses an API to display data which can then be filtered by student names and each student's information is displayed. A user is able to add or delete tags to any student card. This application was built using React and React Hooks. 
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,6 +15,7 @@ This application uses node and all dependencies are installed by running `npm in
 
 ## Usage 
 This application will allow users to view the current song in the playlist and the next songs in the queue. Users will also be able to view top artists and search through artists.<br>
+<img src="public/images/app.png">
 
 ## Contributing 
 Contributors should read the installation section. 
