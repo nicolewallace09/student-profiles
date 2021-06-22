@@ -38,42 +38,42 @@ function StudentList() {
 
  return (
     <>
-        <div className="search-bar">
-            <input className="form-control" 
-                type="search" 
-                placeholder="Search by name" 
-                aria-label="Search"
-                value={q}
-                onChange={(event) => setQ(event.target.value)}>
-            </input>
-        </div>
+    <div className="search-bar">
+        <input className="form-control" 
+            type="search" 
+            placeholder="Search by name" 
+            aria-label="Search"
+            value={q}
+            onChange={(event) => setQ(event.target.value)}>
+        </input>
+    </div>
 
-        {/* <div className="search-tag">
-            <input className="tag-form-control" 
-                type="search" 
-                placeholder="Search by tag" 
-                aria-label="Search"
-                value={tags}
-                onChange={(event) => setTags(event.target.value)}>
-            </input>
-        </div> */}
+    {/* <div className="search-tag">
+        <input className="tag-form-control" 
+            type="search" 
+            placeholder="Search by tag" 
+            aria-label="Search"
+            value={tags}
+            onChange={(event) => setTags(event.target.value)}>
+        </input>
+    </div> */}
 
-        <div className="app-container">
-            <div className='student-list'>
-                {data && searchStudents(data).map((student => ( 
-                    <Student 
-                        key={student.id}
-                        pic={student.pic}
-                        firstName={student.firstName}
-                        lastName={student.lastName}
-                        email={student.email}
-                        company={student.company}
-                        skill={student.skill}
-                        grades={student.grades}
-                        />
-            )))}
-            </div>
+    <div className="app-container">
+        <div className='student-list'>
+            {data && searchStudents(data).map((student => ( 
+                <Student 
+                    key={student.id}
+                    pic={student.pic}
+                    firstName={student.firstName}
+                    lastName={student.lastName}
+                    email={student.email}
+                    company={student.company}
+                    skill={student.skill}
+                    grades={student.grades}
+                />
+        )))}
         </div>
+    </div>
     </> 
  )};
 

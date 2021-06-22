@@ -13,16 +13,16 @@
 }
 
 .app {
-  margin: 30px auto;
+  margin: 0px auto;
   max-width: 800px;
   border-radius: 20px;
   border: solid #e0e0e0 1px;
 }
 
 .app-container {
-  margin: 0 auto;
+  margin: 0px;
   max-width: 800px;
-  max-height: 700px;
+  max-height: 500px;
   overflow-x: scroll;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
