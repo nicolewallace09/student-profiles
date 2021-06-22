@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
+  font-size: 0.8rem;
 }
 
 .page {
@@ -12,7 +13,7 @@
 }
 
 .app {
-  margin: 100px auto;
+  margin: 30px auto;
   max-width: 800px;
   border-radius: 20px;
   border: solid #e0e0e0 1px;
@@ -21,7 +22,7 @@
 .app-container {
   margin: 0 auto;
   max-width: 800px;
-  max-height: 650px;
+  max-height: 700px;
   overflow-x: scroll;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -30,9 +31,9 @@
 img {
   border-radius: 50%;
   border: solid #e0e0e0 1px;
-  width: 9rem;
-  height: 9rem;
-  margin: 30px;
+  width: 5rem;
+  height: 5rem;
+  margin: 20px auto;
 }
 
 /* Student info */
@@ -40,7 +41,7 @@ img {
 .name {
   text-transform: uppercase;
   font-weight: 700; 
-  font-size: 2.3rem;
+  font-size: 1rem;
 }
 
 .info-details {
@@ -70,7 +71,7 @@ input.form-control {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 12px;
-  font-size: 18px;
+  font-size: 0.8rem;
 }
 
 input.tag-form-control {
@@ -103,7 +104,40 @@ li {
   border-radius: 5px;
 }
 
+@media only screen and (min-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
+  .app {
+    margin: 100px auto;
+    max-width: 800px;
+    border-radius: 20px;
+    border: solid #e0e0e0 1px;
+  }
+  .app-container {
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 650px;
+    overflow-x: scroll;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
+  img {
+    border-radius: 50%;
+    border: solid #e0e0e0 1px;
+    width: 9rem;
+    height: 9rem;
+    margin: 30px;
+  }
 
+  .name {
+    text-transform: uppercase;
+    font-weight: 700; 
+    font-size: 2.3rem;
+  }
 
-
+  input.form-control {
+    font-size: 1rem;
+  }
+}
