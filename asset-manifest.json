@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/student-profiles/static/css/main.b2944a60.chunk.css",
+    "main.js": "/student-profiles/static/js/main.83b88de1.chunk.js",
+    "main.js.map": "/student-profiles/static/js/main.83b88de1.chunk.js.map",
+    "runtime-main.js": "/student-profiles/static/js/runtime-main.16837a78.js",
+    "runtime-main.js.map": "/student-profiles/static/js/runtime-main.16837a78.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/student-profiles/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.025dc1af.chunk.js": "/student-profiles/static/js/2.025dc1af.chunk.js",
+    "static/js/2.025dc1af.chunk.js.map": "/student-profiles/static/js/2.025dc1af.chunk.js.map",
+    "static/js/3.ec2e2e57.chunk.js": "/student-profiles/static/js/3.ec2e2e57.chunk.js",
+    "static/js/3.ec2e2e57.chunk.js.map": "/student-profiles/static/js/3.ec2e2e57.chunk.js.map",
+    "index.html": "/student-profiles/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/student-profiles/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.b2944a60.chunk.css.map": "/student-profiles/static/css/main.b2944a60.chunk.css.map",
+    "static/js/2.025dc1af.chunk.js.LICENSE.txt": "/student-profiles/static/js/2.025dc1af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16837a78.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.025dc1af.chunk.js",
+    "static/css/main.b2944a60.chunk.css",
+    "static/js/main.83b88de1.chunk.js"
+  ]
+}
