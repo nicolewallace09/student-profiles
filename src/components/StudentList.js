@@ -35,7 +35,7 @@ function StudentList() {
 
     const searchStudents = (students) => {
         return students.filter((student) =>
-          [`${student.firstName} ${student.lastName}`].some(search => search.toLowerCase().includes(q.toLowerCase())));
+          [student.firstName, student.lastName, `${student.firstName} ${student.lastName}`].some(search => search.toLowerCase().includes(q.toLowerCase())));
     };
 
     // function searchTags (tags) {
