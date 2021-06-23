@@ -28,9 +28,15 @@ function StudentList() {
         displayData();
     }, []); 
 
-    function searchStudents (students) {
-        return students.filter(student => student.firstName.toLowerCase().indexOf(q) > -1 ||  student.lastName.toLowerCase().indexOf(q) > -1);
-    }
+    // original function - keeping as backup for now 
+    // function searchStudents (students) {
+    //     return students.filter(student => student.firstName.toLowerCase().indexOf(q.toLowerCase()) > -1 || student.lastName.toLowerCase().indexOf(q.toLowerCase()) > -1);
+    // }
+
+    const searchStudents = (students) => {
+        return students.filter((student) =>
+          [`${student.firstName} ${student.lastName}`].some(search => search.toLowerCase().includes(q.toLowerCase())));
+    };
 
     // function searchTags (tags) {
     //     return tags.filter(tag => tag.firstName.toLowerCase().indexOf(q) > -1 ||  student.lastName.toLowerCase().indexOf(q) > -1);

@@ -72,7 +72,6 @@ input.form-control {
   border-bottom-right-radius: 0px;
   padding: 12px;
   font-size: 0.8rem;
-  text-transform: lowercase;
 }
 
 input.tag-form-control {
